@@ -1,0 +1,114 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ff5200;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    bottom: auto;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+.dropbtn {
+    background: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.dropbtn:hover {
+    background: #ff6a00;
+    color: white;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    background: #ff6a00;
+    color: white;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Navigation Links */
+.nav-links a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.nav-links a:hover {
+    color: yellow;
+    transform: scale(1.1);
+}
+
+/* Search Box */
+.search {
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+    transition: 0.3s;
+}
+.search:focus {
+    width: 200px;
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-links {
+        margin-top: 10px;
+    }
+    .nav-links a {
+        display: block;
+        margin: 5px 0;
+    }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="help.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <!-- Left Side: Logo & Dropdown -->
+        <div class="left">
+            <img src="logo.png" alt="Swiggy Logo" class="logo">
+            <a href="index.html" class="brand-name">Swiggy</a>
+        
+            <div class="dropdown">
+                <button class="dropbtn">📍 Select Location ▼</button>
+                <div class="dropdown-content">
+                    <a href="#">Bangalore</a>
+                    <a href="#">Mumbai</a>
+                    <a href="#">Delhi</a>
+                    <a href="#">Chennai</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side: Navigation Links -->
+        <div class="nav-links">
+            <a href="offers.html"><i class="fa-solid fa-percent"></i> Offers</a>
+            <a href="help.html"><i class="fa-solid fa-life-ring"></i> Help</a>
+            <a href="signin.html"><i class="fa-solid fa-user"></i> Sign In</a>
+            <a href="cart.html" class="cart"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+            <i class="fa-solid fa-magnifying-glass"></i>  <input type="text" placeholder="Search food..." class="search" >
+        </div>
+    </div>
+
+    <div class="help-support-container">
+        <h2 class="section-heading">🛠️ Help & Support</h2>
+
+        <form class="support-form">
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name"><i class="fa-solid fa-user"></i> Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email"><i class="fa-solid fa-envelope"></i> Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <!-- Issue Type Dropdown -->
+            <div class="form-group">
+                <label for="issue-type"><i class="fa-solid fa-list"></i> Issue Type</label>
+                <select id="issue-type" required>
+                    <option value="" disabled selected>Select issue type</option>
+                    <option value="Order Related">Order Related</option>
+                    <option value="Payment Issue">Payment Issue</option>
+                    <option value="Delivery Issue">Delivery Issue</option>
+                    <option value="Account Issue">Account Issue</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <!-- Issue Description -->
+            <div class="form-group">
+                <label for="description"><i class="fa-solid fa-comment"></i> Issue Description</label>
+                <textarea id="description" rows="4" placeholder="Describe your issue here..." required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Request</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fa-solid fa-envelope"></i> support@foodie.com</p>
+                <p><i class="fa-solid fa-location-dot"></i> Bangalore, India</p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Foodie | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>

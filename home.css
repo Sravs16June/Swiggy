@@ -1,0 +1,84 @@
+/* Reset & Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f8f8f8;
+    text-align: center;
+}
+
+/* Section Heading */
+.section-heading {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #ff6a00;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Food Items Grid */
+.food-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px;
+}
+
+/* Food Card */
+.food-card {
+    width: 180px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+.food-card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.food-card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 8px;
+}
+
+/* Hover Effects */
+.food-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .food-items {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
